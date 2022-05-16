@@ -69,8 +69,8 @@ function ViewMenu() {
 
          return(
           <div className="wrapper">    
-            <h1>Menu</h1>
-            <h4>Select food items</h4> 
+            <h1>menu</h1>
+            <h4>select food items</h4> 
               <div className="container-card">
                 {menus.map((item)=>{
                   return(
@@ -83,7 +83,7 @@ function ViewMenu() {
                      {()=>{
                        setMenuid(item.menuid)
                      }}
-                      <Button variant="primary" onClick={() => addToCart(item.menuid)} className="add-to-cart">Add to cart</Button>
+                      <Button variant="dark" onClick={() => addToCart(item.menuid)} className="add-to-cart">Add to cart</Button>
                       </Card.Body>
                     </Card>
                   )})}

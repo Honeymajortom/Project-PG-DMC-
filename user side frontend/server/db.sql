@@ -77,29 +77,24 @@ DELETE FROM menu WHERE menuid=1;
 
 
 
-
-
-create database medicines_db;
-use medicines_db;
+create database tiffin_db;
+use tiffin_db;
 
 create table user (
   id integer primary key auto_increment,
-  firstName varchar(1000),
-  lastName varchar(1000),
-  email varchar(1000) UNIQUE,
-  password varchar(100),
+  firstName varchar(500),
+  lastName varchar(500),
+  email varchar(500) UNIQUE,
+  password varchar(500),
   createdTimeStamp timestamp default CURRENT_TIMESTAMP
 );
 
-create table medicines (
+create table menu (
   id integer primary key auto_increment,
-  title varchar(1000),
-  company varchar(1000),
-  mrp float,
+  title varchar(500),
+  descr varchar(500),
   price float,
-  unit varchar(1000),
-  expiryDate varchar(1000),
-  thumbnail varchar(1000),
+  thumbnail varchar(500),
   createdTimeStamp timestamp default CURRENT_TIMESTAMP
 );
 
@@ -118,22 +113,10 @@ create table orders (
 create table orderDetails (
   id integer primary key auto_increment,
   orderId integer,
-  medicineId integer,
+  menuId integer,
   price float,
   quantity integer,
   total float,
-  createdTimeStamp timestamp default CURRENT_TIMESTAMP
-);
-
-
-create table reminders (
-  id integer primary key auto_increment,
-  userId integer,
-  medicineId integer,
-  alarmDate TIMESTAMP,
-  quantity integer,
-  status integer default 0,
-  note varchar(200),
   createdTimeStamp timestamp default CURRENT_TIMESTAMP
 );
 
@@ -158,20 +141,3 @@ CREATE TABLE address(
   createdTimeStamp timestamp default CURRENT_TIMESTAMP
 ); 
 
-CREATE table stores (
-  id INTEGER PRIMARY KEY auto_increment,
-  name varchar(100),
-  phone VARCHAR(15),
-  email VARCHAR(50),
-  addressLine1 varchar(50),
-  addressLine2 varchar(50),
-  addressLine3 varchar(50),
-  city varchar(50),
-  state varchar(50),
-  country varchar(50),
-  zipCode varchar(50),
-  latitude float,
-  longitude float,
-  createdTimeStamp timestamp default CURRENT_TIMESTAMP
-
-);

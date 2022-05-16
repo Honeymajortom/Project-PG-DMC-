@@ -110,7 +110,7 @@ function Cart() {
 
   return (
     <div className="wrapper">
-        <h1>Cart Items</h1>
+        <h1>cart items</h1>
         <div className="container-card">
                 {cart.map((item)=>{
                   return(

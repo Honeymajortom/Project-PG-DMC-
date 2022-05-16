@@ -7,7 +7,7 @@ function NavBar() {
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                <LinkContainer to="/Home"><Navbar.Brand>Obento Tiffin Service</Navbar.Brand></LinkContainer>
+                <LinkContainer to="/Home"><Navbar.Brand>Bento.</Navbar.Brand></LinkContainer>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
@@ -21,12 +21,12 @@ function NavBar() {
                             </NavDropdown>
                         </Nav>
                         <Nav>
-                            <LinkContainer to="/Home"><Nav.Link>Home</Nav.Link></LinkContainer>
-                            <LinkContainer to="/OrderTiffin"><Nav.Link>Your Orders</Nav.Link></LinkContainer>
-                            <LinkContainer to="/ViewMenu"><Nav.Link>View Menu</Nav.Link></LinkContainer>
-                            <LinkContainer to="/Cart"><Nav.Link>Cart</Nav.Link></LinkContainer>
-                            <LinkContainer to="/Signup"><Nav.Link>Sign up</Nav.Link></LinkContainer>
-                            <LinkContainer to="/Signin"><Nav.Link>Log in</Nav.Link></LinkContainer>
+                            <LinkContainer to="/Home"><Nav.Link>home</Nav.Link></LinkContainer>
+                            <LinkContainer to="/OrderTiffin"><Nav.Link>orders</Nav.Link></LinkContainer>
+                            <LinkContainer to="/ViewMenu"><Nav.Link>menu</Nav.Link></LinkContainer>
+                            <LinkContainer to="/Cart"><Nav.Link>cart</Nav.Link></LinkContainer>
+                            <LinkContainer to="/Signup"><Nav.Link>sign up</Nav.Link></LinkContainer>
+                            <LinkContainer to="/Signin"><Nav.Link>log in</Nav.Link></LinkContainer>
                            
                         </Nav>
                     </Navbar.Collapse>
